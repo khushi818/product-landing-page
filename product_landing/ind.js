@@ -1,5 +1,6 @@
 const btn =document.querySelector('.btn');
-btn.addEventListener('click', () => {
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
     if (document.body.style.background != "#333" ){
         document.querySelector('body').classList.toggle('bg-dark');
         document.querySelector('.btn').classList.toggle('bg-btn-light');
